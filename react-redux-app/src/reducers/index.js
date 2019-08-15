@@ -1,5 +1,4 @@
-import React from 'react';
-import { FETCH_FILMS_START, FETCH_FILMS_SUCCESS, FETCH_FILMS_FAILURE } from '../actions/index'; 
+import { FETCH_FILMS_START, FETCH_FILMS_SUCCESS, FETCH_FILMS_FAILURE } from '../actions'; 
 
 const initialState = {
     films: [],
@@ -22,5 +21,7 @@ export const reducer = (state = initialState, action) => {
                 isLoading: false,
                 films: action.payload,
             }
+        default: 
+            return state; 
     }
 }

@@ -5,7 +5,6 @@ import FilmList from './components/FilmList';
 function App() {
   return (
     <div className="App">
-      <p>App.js</p>
       <FilmList />
     </div>
   );
