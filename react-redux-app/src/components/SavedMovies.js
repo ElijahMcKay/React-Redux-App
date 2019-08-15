@@ -1,10 +1,11 @@
 import React from 'react';
+import SavedMovie from './SavedMovie'; 
 
 function SavedMovies(props) {
 
     return (
         <div>
-            <p>Saved Movies</p>
+            <SavedMovie />
         </div>
     )
 }
